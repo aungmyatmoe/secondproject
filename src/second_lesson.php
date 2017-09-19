@@ -11,7 +11,7 @@
 <html>
     <head><title>Second Lesson</title></head>
     <body>
-        <form action="login.php" method="get">
+        <form action="second_login.php" method="get">
             <label for="email">Email (or) User ID</label><br/>
             <input type="text" id="email" name="email"><br/>
 
