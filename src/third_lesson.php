@@ -58,7 +58,7 @@
                 <h1>Welcome to My Website</h1>
                 <p>You see this because you are an authenticated user. Congratulation!</</p>
                 <b><?php echo $_SESSION['id'] ?></b>
-                <a href="logout.php">Logout</a>
+                <a href="third_logout.php">Logout</a>
             <?php } else {?>
                 <h1>You need to login</h1>
                 <form action="third_login.php" method="post">
