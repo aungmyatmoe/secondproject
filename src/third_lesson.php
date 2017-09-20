@@ -60,7 +60,7 @@
                 <b><?php echo $_SESSION['id'] ?></b>
                 <a href="third_logout.php">Logout</a>
             <?php } else {?>
-                <h1>You need to login</h1>
+                <h1>You need to login ****</h1>
                 <form action="third_login.php" method="post">
                     <label for="id">User ID</label><br/>
                     <input type="text" id="id" name="id"><br/>
