@@ -1,11 +1,72 @@
 <html>
 	<head>
 		<title>PHP Exercise</title>
+        <style>
+            body{
+                margin: 20px 500px;
+            }
+            .box{
+                width: 100%;
+                border: 1px solid #aa2222;
+                padding: 1px;
+                margin-bottom: 8px;
+            }
+
+            .box h3{
+                color: #ffffff;
+                background: #cc2222;
+                padding: 8px;
+                margin: 0;
+                cursor: pointer;
+            }
+
+            .box h3 up{
+                color: #dd9999;
+            }
+
+            .box ul li{
+                list-style: none;
+            }
+
+            .box a{
+                text-decoration: none;
+                color: #990000;
+            }
+        </style>
+        <script src="Script/jquery-3.2.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+               $("h3").click(function () {
+                    var parent=$(this).parent();
+                    $("ul",parent).slideToggle("fast");
+                    $(this).toggleClass("up");
+               });
+            });
+        </script>
 	</head>
 	<body>
-		<a href="first_lesson.php" target="_blank">First Lesson (Date manuplication)</a><br/>
-		<a href="second_lesson.php" target="_blank">Second Lesson (GET/POST Sample)</a><br/>
-		<a href="third_lesson.php" target="_blank">Third Lesson (Session Sample)</a><br/>
-		<a href="gallery/file_upload.php" target="_blank">File Upload</a><br/>
+        <div class="box">
+            <h3>HTML Lesson</h3>
+            <ul>
+                <li><a href="#">Lesson 1</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Sample PHP Lesson</h3>
+            <ul>
+                <li><a href="first_lesson.php" target="_blank">First Lesson (Date manuplication)</a></li>
+                <li><a href="second_lesson.php" target="_blank">Second Lesson (GET/POST Sample)</a></li>
+                <li><a href="third_lesson.php" target="_blank">Third Lesson (Session Sample)</a></li>
+                <li><a href="gallery/file_upload.php" target="_blank">File Upload</a></li>
+                <li><a href="shell_exec.php" target="_blank">Run Shell Script</a></li>
+                <li><a href="server_info.php" target="_blank">Server Info Details</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>PHP & MySQL</h3>
+            <ul>
+                <li><a href="" target="_blank"></a></li>
+            </ul>
+        </div>
 	</body>
 <html>
