@@ -10,6 +10,7 @@
 <html>
     <head>
         <title>New Category</title>
+        <link rel="stylesheet" href="css/style.css">
         <style>
             form label{
                 display: block;
@@ -18,6 +19,15 @@
         </style>
     </head>
     <body>
+    <?php
+    include("conf/auth.php");
+    ?>
+        <ul class="menu">
+            <li><a href="book_list.php">Manage Books</a></li>
+            <li><a href="cat_list.php">Manage Categories</a></li>
+            <li><a href="orders.php">Manage Orders</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
         <h1>New Category</h1>
 
         <form action="cat_add.php" method="post">
