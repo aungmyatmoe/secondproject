@@ -27,7 +27,7 @@ include("admin/conf/config.php");
 <div class="sidebar">
     <ul class="cats">
         <li><a href="index.php">&laquo; Continue Shopping</a></li>
-        <li><a href="clear-cart.php" class="del">&times; Clear Cart</a></li>
+        <li><a href="clear_cart.php" class="del">&times; Clear Cart</a></li>
     </ul>
 </div>
 <div class="main">
